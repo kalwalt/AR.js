@@ -53,7 +53,7 @@ To try it on your phone, it is only 2 easy steps, check it out!
 
 # What "Marker Based" means
 AR.js uses `artoolkit`, and so it is marker based.
-`artoolkit` is a software with years of experience doing augmented reality. It is able to do a lot!
+`Artoolkit` is a software with years of experience doing augmented reality. It is able to do a lot!
 
 It supports a wide range of markers: multiple types of markers [pattern](https://github.com/artoolkit/artoolkit5/tree/master/doc/patterns)/[barcode](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)
 multiple independent markers at the same time, or [multiple markers acting as a single marker](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_multi.md) up to you to choose.
@@ -102,6 +102,18 @@ Otherwise, as default, the script searches for places of interest near the user 
 
 You can also use GeoAR.js **without** the script, adding `gps-entity-place` entities directly on the `index.html` file.as documentated [here](https://github.com/jeromeetienne/AR.js/blob/master/aframe/README.md).
 
+# What "NFT" means
+
+ Natural Feature Tracking or NFT is a technology that enables the use of images instead of markers like QR Codes or the Hiro. 
+ 
+ **Now you can use any image you want!**
+
+
+<img height="400" width="250" src="data/images/trackingGif.gif">
+
+The software tracks interesting points in the image and from that it estimates the position of the camera. These interesting points are created using the `NFT Marker Creator`, a tool available to you for creating NFT markers, it has two versions the [WEB APP](https://carnaux.github.io/NFT-Marker-Creator/)(recommended), and the [NODE APP](https://github.com/Carnaux/NFT-Marker-Creator).
+
+If you want to understand the creation of markers in more depth, check out the  NFT Marker Creator [wiki](https://github.com/Carnaux/NFT-Marker-Creator/wiki/Creating-good-markers). 
 
 # Index
 * [Get Started](#Get-Started)
@@ -208,7 +220,10 @@ The service is available [webxr.io/augmented-website](https://webxr.io/augmented
 - [ARCode Generator](https://jeromeetienne.github.io/AR.js/three.js/examples/arcode.html):
   Generator of AR-Code
   ([source](https://github.com/jeromeetienne/AR.js/blob/master/three.js/examples/arcode.html))
-
+- NFT Marker Creator:
+    - [WEB APP](https://carnaux.github.io/NFT-Marker-Creator/): The easier to use and recommended version.
+    - [NODE APP](https://carnaux.github.io/NFT-Marker-Creator/): The developer version.
+    
 # Performance
 
 We are still early in the project but here are some initial numbers to give you an idea.
